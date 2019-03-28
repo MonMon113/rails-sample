@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :image_comments
+  resources :images
   root 'statis_pages#home'
 
   devise_for :users
